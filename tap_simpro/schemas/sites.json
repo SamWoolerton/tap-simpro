@@ -1,0 +1,37 @@
+{
+  "type": ["null", "object"],
+  "additionalProperties": false,
+  "properties": {
+    "ID": { "type": ["string"] },
+    "Name": { "type": ["null", "string"] },
+    "Address": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "Address": { "type": ["string"] },
+        "City": { "type": ["string"] },
+        "State": { "type": ["string"] },
+        "PostalCode": { "type": ["string"] },
+        "Country": { "type": ["string"] }
+      }
+    },
+    "PrimaryContact": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "Contact": {
+          "type": ["null", "object"],
+          "additionalProperties": false,
+          "properties": {
+            "ID": { "type": ["number"] }
+          }
+        }
+      }
+    },
+    "DateModified": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "Archived": { "type": ["null", "boolean"] }
+  }
+}

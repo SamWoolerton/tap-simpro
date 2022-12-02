@@ -1,0 +1,37 @@
+{
+  "type": ["null", "object"],
+  "additionalProperties": false,
+  "properties": {
+    "ID": { "type": ["string"] },
+    "Customer": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ID": { "type": ["number"] }
+      }
+    },
+    "DateIssued": { "type": ["null", "string"], "format": "date" },
+    "DateModified": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    },
+    "InvoiceNo": { "type": ["string"] },
+    "Stage": { "type": ["null", "string"] },
+    "Status": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ID": { "type": ["string"] },
+        "Name": { "type": ["null", "string"] }
+      }
+    },
+    "Total": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ExTax": { "type": ["null", "number"] },
+        "IncTax": { "type": ["null", "number"] }
+      }
+    }
+  }
+}

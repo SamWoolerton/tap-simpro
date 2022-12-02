@@ -1,0 +1,18 @@
+{
+  "type": ["null", "object"],
+  "additionalProperties": false,
+  "properties": {
+    "ID": { "type": ["number"] },
+    "VendorOrderID": { "type": ["number"] },
+    "VendorOrderReceiptID": { "type": ["number"] },
+    "CatalogID": { "type": ["number"] },
+    "AssignedTo": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ID": { "type": ["number"] }
+      }
+    },
+    "Quantity": { "type": ["number"] }
+  }
+}

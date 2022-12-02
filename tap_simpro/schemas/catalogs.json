@@ -1,0 +1,16 @@
+{
+  "type": ["null", "object"],
+  "additionalProperties": false,
+  "properties": {
+    "ID": { "type": ["string"] },
+    "PartNo": { "type": ["null", "string"] },
+    "Name": { "type": ["null", "string"] },
+    "Archived": { "type": ["boolean"] },
+    "Supplier": { "type": ["null", "string"] },
+    "InvoiceNumber": { "type": ["null", "string"] },
+    "DateModified": {
+      "type": ["null", "string"],
+      "format": "date-time"
+    }
+  }
+}

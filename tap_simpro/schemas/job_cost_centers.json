@@ -1,0 +1,72 @@
+{
+  "type": ["null", "object"],
+  "additionalProperties": false,
+  "properties": {
+    "JobID": { "type": ["string"] },
+    "SectionID": { "type": ["string"] },
+    "ID": { "type": ["string"] },
+    "CostCenter": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ID": { "type": ["string"] },
+        "Name": { "type": ["string"] }
+      }
+    },
+    "Name": { "type": ["null", "string"] },
+    "DisplayOrder": { "type": ["number"] },
+    "ItemsLocked": { "type": ["null", "boolean"] },
+    "Total": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ExTax": { "type": ["number"] },
+        "Tax": { "type": ["number"] },
+        "IncTax": { "type": ["number"] },
+        "TaxCode": {
+          "type": ["null", "object"],
+          "additionalProperties": false,
+          "properties": {
+            "ID": { "type": ["string"] }
+          }
+        }
+      }
+    },
+    "Claimed": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ToDate": {
+          "type": ["null", "object"],
+          "additionalProperties": false,
+          "properties": {
+            "Percent": { "type": ["null", "number"] },
+            "Amount": {
+              "type": ["null", "object"],
+              "additionalProperties": false,
+              "properties": {
+                "ExTax": { "type": ["null", "number"] },
+                "IncTax": { "type": ["null", "number"] }
+              }
+            }
+          }
+        },
+        "Remaining": {
+          "type": ["null", "object"],
+          "additionalProperties": false,
+          "properties": {
+            "Percent": { "type": ["null", "number"] },
+            "Amount": {
+              "type": ["null", "object"],
+              "additionalProperties": false,
+              "properties": {
+                "ExTax": { "type": ["null", "number"] },
+                "IncTax": { "type": ["null", "number"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

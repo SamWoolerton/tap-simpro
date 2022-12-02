@@ -1,0 +1,23 @@
+{
+  "type": ["null", "object"],
+  "additionalProperties": false,
+  "properties": {
+    "ID": { "type": ["number"] },
+    "VendorOrderNo": { "type": ["number"] },
+    "VendorInvoiceNo": { "type": ["null", "string"] },
+    "DateIssued": { "type": ["null", "string"], "format": "date" },
+    "DueDate": { "type": ["null", "string"], "format": "date" },
+    "ItemsReceived": { "type": ["boolean"] },
+    "DateCreated": { "type": ["null", "string"], "format": "date-time" },
+    "DateModified": { "type": ["null", "string"], "format": "date-time" },
+    "ItemsReceivedDate": { "type": ["null", "string"], "format": "date-time" },
+    "Total": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ExTax": { "type": ["number"] },
+        "IncTax": { "type": ["number"] }
+      }
+    }
+  }
+}

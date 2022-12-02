@@ -1,0 +1,38 @@
+{
+  "type": ["null", "object"],
+  "additionalProperties": false,
+  "properties": {
+    "ID": { "type": ["string"] },
+    "Description": { "type": ["null", "string"] },
+    "Customer": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ID": { "type": ["number"] }
+      }
+    },
+    "Site": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ID": { "type": ["number"] }
+      }
+    },
+    "Total": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "ExTax": { "type": ["null", "number"] },
+        "IncTax": { "type": ["null", "number"] }
+      }
+    },
+    "Removed": { "type": ["null", "boolean"] },
+    "CustomFields": {
+      "type": ["null", "object"],
+      "additionalProperties": false,
+      "properties": {
+        "Job Number": { "type": ["null", "number"] }
+      }
+    }
+  }
+}
